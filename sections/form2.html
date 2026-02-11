@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    .parent{
+        display: flex;
+    }
+    .sub--parent--1{
+        flex-basis: 30%;
+    align-self: center;
+    }
+.sub--parent--1 i{
+    font-size: 23px;
+    padding: 10px;
+    
+}
+.main--icon{
+    display: flex;
+
+}
+.desc h5{
+    margin: 2px;
+    padding: 2px;
+}
+.desc p{
+    margin: 2px;
+}
+.sub--parent--2{
+  
+    flex-basis: 70%;
+}
+.form--wraper form{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px;
+}
+.form--wraper ::placeholder{
+    color:black;
+    
+    
+    
+
+}
+.form--wraper input{
+    padding: 15px;
+    border: 1px solid ;
+    border-radius: 5px;
+    
+}
+.text--wrap{
+    flex-basis: 50%;
+    margin-block: 20px;
+}
+.text--wrap input{
+    width: 80%;
+}
+.mail--wrap{
+    flex-basis: 50%;
+      margin-block: 20px;
+}
+.mail--wrap input{
+    width: 80%;
+}
+.phone--wrap{
+    flex-basis: 100%;
+      margin-block: 20px;
+}
+.phone--wrap input{
+    width: 90%;
+}
+.comment--wrap{
+    flex-basis: 100%;
+      margin-block: 20px;
+}
+  .comment--wrap textarea{
+width: 91%;
+padding: 10px;
+border: 1px solid black;
+border-radius: 5px;
+  }
+.btn--wrap{
+    flex-basis: 100%;
+    margin-block: 20px;
+}
+.btn--wrap button{
+    width: 95%;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border: none;
+ 
+    font-size: 18px;
+}
+@media screen and (max-width:768px){
+    .parent{
+        flex-direction: column;
+    }
+    .form--wraper form{
+        flex-direction: column;
+    }
+    .text--wrap input{
+        width: 90%;
+    }
+    .mail--wrap input{
+        width: 90%;
+    }
+    .comment--wrap textarea{
+        width: 91%;
+    }
+    .btn--wrap button{
+        width: 95%;
+    }
+}
+
+
+input:not(:placeholder-shown)+label{
+    position: absolute !important;
+    top: -8px !important;
+    left: 8px;
+    background: white;
+    opacity: 1;
+    transition: all 0.3s ease !important;
+}
+    
+     input:focus+label{
+        background-color:white !important;
+        transition: all 0.3s ease;
+        position: absolute !important;
+        left: 8px;
+        top: -8px !important;
+        background: white;
+}
+textarea:focus+label{
+        background-color:white !important;
+        transition: all 0.3s ease;
+        position: absolute !important;
+        left: 8px;
+        top: -8px !important;
+        background: white;
+}
+        input::placeholder{
+            color: transparent !important;
+        }
+        textarea::placeholder{
+            color: transparent !important;
+        }
+    
+        .text--wrap div{
+            position:relative;
+        }
+        .mail--wrap div{
+            position: relative;
+        }
+        .phone--wrap div{
+            position: relative;
+        }
+        .text--wrap div label{
+        position: absolute;
+            left: 8px;
+            top: 20px;
+            transition: all 0.3s ease;
+                }
+        .mail--wrap div label{
+                position: absolute;
+                    left: 8px;
+                    top: 20px;
+                    transition: all 0.3s ease;
+                }
+        .phone--wrap div label{
+                position: absolute;
+                    left: 8px;
+                    top: 20px;
+                    transition: all 0.3s ease;
+                }
+                .comment--wrap div{
+                    position: relative;
+                }
+                .comment--wrap div label{
+                position: absolute;
+                    left: 8px;
+                    top: 20px;
+                    transition: all 0.3s ease;
+                }
+
+</style>
+</head>
+<body>
+    <div class="parent">
+
+<div class="sub--parent--1">
+        <div class="main--icon">
+            <div class="icon--wraper">
+        <i class="fa-solid fa-house"></i>
+        </div>
+        <div class="desc">
+        <h5>Address</h5>
+      <p>Citrus HTS, CA 956910, USA</p>
+        </div>
+
+        </div>
+        <div class="main--icon">
+            <div class="icon--wraper">
+        <i class="fa-solid fa-phone"></i>
+        </div>
+        <div class="desc">
+        <h5>Phone</h5>
+        <p>+1 (231) 463-4971</p>
+          </div>
+        </div>
+        <div class="main--icon">
+            <div class="icon--wraper">
+        <i class="fa-solid fa-envelope"></i>
+        </div>
+        <div class="desc">
+        <h5>Email</h5>
+        <p>contact@weirugs.com</p>
+        </div>
+        </div>
+</div>
+
+
+<div class="sub--parent--2">
+    <div class="form--wraper">
+<form class="main--form">
+
+    <div class="text--wrap">
+        
+        <div>
+            <input type="text" id="name" placeholder="Name">
+            <label for="name">Name</label>
+  
+  
+  </div>
+  </div>
+<div class="mail--wrap">
+<div>
+    <input type="email" placeholder="E-Mail">
+    <label>E-Mail</label>
+</div>
+</div>
+  <div class="phone--wrap">
+    <div>
+  <input type="tel" placeholder="Phone Number">
+  <label>Phone Number</label>
+  </div>
+  </div>
+
+  <div class="comment--wrap">
+    <div>
+  <textarea placeholder="Comment" rows="10" ></textarea>
+  <label>Comment</label>
+  </div>
+  </div>
+  <div class="btn--wrap">
+    <div>
+  <button type="submit">Send Message</button>
+  </div>
+  </div>
+
+
+
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+    </div>
+
+</body>
+</html>

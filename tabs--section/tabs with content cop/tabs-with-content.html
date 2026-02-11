@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs Section</title>
+    <link rel="stylesheet" href="tabs-style.css">
+</head>
+
+<body>
+    <div class="tabs-container">
+        <div class="tabs-header">
+            <button class="tab-btn active" data-tab="tab1">
+                <span class="btn-icon">🎨</span>
+                Design
+            </button>
+            <button class="tab-btn" data-tab="tab2">
+                <span class="btn-icon">💻</span>
+                Development
+            </button>
+            <button class="tab-btn" data-tab="tab3">
+                <span class="btn-icon">📱</span>
+                Mobile
+            </button>
+        </div>
+
+        <div class="tabs-content">
+            <!-- Tab 1: Design -->
+            <div class="tab-pane active" id="tab1">
+                <div class="tab-inner">
+                    <div class="tab-image">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&h=300&fit=crop" alt="Design">
+                    </div>
+                    <div class="tab-text">
+                        <h2 class="tab-heading">Creative Design</h2>
+                        <p class="tab-description">
+                            Explore our innovative design solutions that bring your vision to life with modern aesthetics and user-centric approach.
+                        </p>
+                        <button class="tab-action-btn tab-btn-1">Explore Designs</button>
+                    </div>
+                </div>
+
+                <div class="tab-children">
+                    <div class="child-item">
+                        <h4>UI Components</h4>
+                        <p>Beautiful and functional UI elements</p>
+                    </div>
+                    <div class="child-item">
+                        <h4>Color Palettes</h4>
+                        <p>Curated color schemes for your projects</p>
+                    </div>
+                    <div class="child-item">
+                        <h4>Typography</h4>
+                        <p>Perfect font combinations</p>
+                    </div>
+                    <div class="child-item">
+                        <h4>Layouts</h4>
+                        <p>Responsive layout templates</p>
+                    </div>
+                    <div class="child-item">
+                        <h4>Icons</h4>
+                        <p>Extensive icon library</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab 2: Development -->
+            <div class="tab-pane" id="tab2">
+                <div class="tab-inner">
+                    <div class="tab-image">
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=300&fit=crop" alt="Development">
+                    </div>
+                    <div class="tab-text">
+                        <h2 class="tab-heading">Web Development</h2>
+                        <p class="tab-description">
+                            Build powerful web applications with cutting-edge technologies and best practices for scalable solutions.
+                        </p>
+                        <button class="tab-action-btn tab-btn-2">Start Building</button>
+                    </div>
+                </div>
+
+                <div class="tab-children">
+                    <div class="child-item">
+                        <h4>Frontend</h4>
+                        <p>Modern frontend frameworks</p>
+                    </div>
+                    <div class="child-item">
+                        <h4>Backend</h4>
+                        <p>Robust backend solutions</p>
+                    </div>
+                    <div class="child-item">
+                        <h4>Databases</h4>
+                        <p>Database design and optimization</p>
+                    </div>
+                    <div class="child-item">
+                        <h4>APIs</h4>
+                        <p>RESTful API development</p>
+                    </div>
+                    <div class="child-item">
+                        <h4>Deployment</h4>
+                        <p>Cloud deployment services</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab 3: Mobile -->
+            <div class="tab-pane" id="tab3">
+                <div class="tab-inner">
+                    <div class="tab-image">
+                        <img src="https://images.unsplash.com/photo-1512941691920-25bdb75edc74?w=500&h=300&fit=crop" alt="Mobile">
+                    </div>
+                    <div class="tab-text">
+                        <h2 class="tab-heading">Mobile Apps</h2>
+                        <p class="tab-description">
+                            Create engaging mobile applications with native and cross-platform technologies for iOS and Android.
+                        </p>
+                        <button class="tab-action-btn tab-btn-3">Get Started</button>
+                    </div>
+                </div>
+
+                <div class="tab-children">
+                    <div class="child-item">
+                        <h4>iOS Apps</h4>
+                        <p>Native iOS development</p>
+                    </div>
+                    <div class="child-item">
+                        <h4>Android Apps</h4>
+                        <p>Native Android development</p>
+                    </div>
+                    <div class="child-item">
+                        <h4>Cross-Platform</h4>
+                        <p>React Native & Flutter</p>
+                    </div>
+                    <div class="child-item">
+                        <h4>UX/UI</h4>
+                        <p>Mobile interface design</p>
+                    </div>
+                    <div class="child-item">
+                        <h4>Testing</h4>
+                        <p>Mobile app testing strategies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="tabs-script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+.main--parent {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.section--wrapper {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-direction: row-reverse;
+}
+
+.image--wrapper {
+    flex-basis: 50%;
+    box-sizing: border-box;
+}
+
+.image--wrapper img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.content--wrapper {
+    flex-basis: 50%;
+    text-align: center;
+    padding: 15px;
+    background: cadetblue;
+    align-content: center;
+    padding-inline: 80px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.content--wrapper button {
+    padding: 8px 15px;
+    background: black;
+    color: white;
+}
+
+@media screen and (max-width:768px) {
+    .section--wrapper {
+        flex-direction: column;
+    }
+}

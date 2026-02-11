@@ -1,0 +1,53 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+#menu{
+    border: 1px solid black;
+    display: flow-root;
+}
+#menu > ul{
+    background-color: #7f8c8d;
+    
+}
+#menu ul{
+list-style: none;
+margin: 0%;
+    
+    position: relative;
+    float: left;
+}
+li{
+    padding: 10px;
+}
+#menu ul a{
+    text-decoration: none;
+    color: #d2dae2;
+    font-size: 20px;
+    font-weight: 500;
+    padding-block: 10px;
+    display: block;
+}
+#menu ul li{
+    float:left;
+    position: relative;
+    margin: 0%;
+    width: 100px;
+    
+}
+#menu ul ul{
+    position: absolute;
+    background-color: #f53b57;
+    display: none;
+    left: 0%;
+    
+    
+}
+#menu ul li:hover >ul{
+    display: block;
+}
+#menu ul li ul{
+    border: 1px solid blue;
+float: none;
+
+    
+}

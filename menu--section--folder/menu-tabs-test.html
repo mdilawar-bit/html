@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main--wraper {
+            max-width: 85%;
+            margin: 50px auto;
+            padding: 50px;
+            background-color: #F0F5F6;
+            /* box-shadow: 5px 5px 10px 2px black; */
+        }
+        
+        .heading--wraper {
+            text-align: center;
+            font-size: 32px;
+        }
+        
+        .heading--wraper::after {
+            content: " ";
+            width: 80px;
+            height: 3px;
+            background-color: #CA9E57;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        .btn--wraper {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .btn--wraper button {
+            border: 2px solid #CA9E57;
+            color: #CA9E57;
+            font-size: 16px;
+            font-weight: 600;
+            padding: 8px 15px;
+            border-radius: .5em;
+        }
+        
+        .main--item--wrap {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            margin-top: 60px;
+        }
+        
+        .items--wraper {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .items--wraper img {
+            width: 230px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: .5em;
+            border: 5px solid #CA9E57;
+        }
+        
+        .item--content--header {
+            font-size: 18px;
+            letter-spacing: 2px;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px dashed black;
+        }
+        
+        .item--content--header h5 {
+            margin-block: 0;
+        }
+        
+        .item--content--header span {
+            color: #CA9E57;
+        }
+        
+        .btn--wraper button:hover,
+        .btn--wraper .active {
+            background-color: #CA9E57;
+            color: black;
+            cursor: pointer;
+        }
+        
+        #breakfast-items {
+            display: none;
+        }
+        
+        #lunch-items {
+            display: none;
+        }
+        
+        #shakes-items {
+            display: none;
+        }
+        
+        #dinner-items {
+            display: none;
+        }
+        
+        @media screen and (max-width:800px) {
+            .main--wraper {
+                max-width: 95%;
+                padding-inline: 0;
+            }
+            .main--item--wrap {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            .items--wraper {
+                gap: 10px;
+                width: 90%;
+                padding-inline: 10px;
+            }
+            .items--wraper img {
+                width: 21%;
+            }
+            .btn--wraper button {
+                margin: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main--wraper">
+        <h1 class="heading--wraper">Our Menu</h1>
+        <div class="btn--wraper">
+            <button class="active" data-target="all-items">All</button>
+            <button data-target="breakfast-items">Breakfast</button>
+            <button data-target="lunch-items">Lunch</button>
+            <button data-target="shakes-items">Shakes</button>
+            <button data-target="dinner-items">Dinner</button>
+        </div>
+        <div class="main--item--wrap" id="all-items">
+            <div class="items--wraper">
+                <img src="anna-tukhfatullina-food-photographer-stylist-Mzy-OjtCI70-unsplash.jpg">
+                <div class="item--content">
+                    <div class="item--content--header">
+                        <h5>Buttermilk Pancakes</h5>
+                        <span>$15.99</span>
+                    </div>
+                    <p class="content--desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, accusamus?
+                    </p>
+                </div>
+            </div>
+            <!------------2------------->
+            <div class="items--wraper">
+                <img src="joseph-gonzalez-zcUgjyqEwe8-unsplash.jpg">
+                <div class="item--content">
+                    <div class="item--content--header">
+                        <h5>Dinner Double</h5>
+                        <span>$13.99</span>
+                    </div>
+                    <p class="content--desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, accusamus?
+                    </p>
+                </div>
+            </div>
+            <!------------------3---------------->
+            <div class="items--wraper">
+                <img src="snappr-TXD-sslrnc0-unsplash.jpg">
+                <div class="item--content">
+                    <div class="item--content--header">
+                        <h5>Dinner Double</h5>
+                        <span>$13.99</span>
+                    </div>
+                    <p class="content--desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, accusamus?
+                    </p>
+                </div>
+            </div>
+            <!----------4--------------->
+            <div class="items--wraper">
+                <img src="trevor-S_Ix5P7SOcE-unsplash.jpg">
+                <div class="item--content">
+                    <div class="item--content--header">
+                        <h5>Dinner Double</h5>
+                        <span>$13.99</span>
+                    </div>
+                    <p class="content--desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, accusamus?
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!---------------breakfast-------------------->
+        <div class="main--item--wrap" id="breakfast-items">
+            <div class="items--wraper">
+                <img src="image-5.jpg">
+                <div class="item--content">
+                    <div class="item--content--header">
+                        <h5>Buttermilk Pancakes</h5>
+                        <span>$15.99</span>
+                    </div>
+                    <p class="content--desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, accusamus?
+                    </p>
+                </div>
+            </div>
+            <!------------2------------->
+            <div class="items--wraper">
+                <img src="image-6.jpg">
+                <div class="item--content">
+                    <div class="item--content--header">
+                        <h5>Dinner Double</h5>
+                        <span>$13.99</span>
+                    </div>
+                    <p class="content--desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, accusamus?
+                    </p>
+                </div>
+            </div>
+            <!------------------3---------------->
+            <div class="items--wraper">
+                <img src="iamge-7.jpg">
+                <div class="item--content">
+                    <div class="item--content--header">
+                        <h5>Dinner Double</h5>
+                        <span>$13.99</span>
+                    </div>
+                    <p class="content--desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, accusamus?
+                    </p>
+                </div>
+            </div>
+            <!----------4--------------->
+            <div class="items--wraper">
+                <img src="image-8.jpg">
+                <div class="item--content">
+                    <div class="item--content--header">
+                        <h5>Dinner Double</h5>
+                        <span>$13.99</span>
+                    </div>
+                    <p class="content--desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, accusamus?
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-----------------------lunch-------------------------->
+        <div class="main--item--wrap" id="lunch-items">
+            <div class="items--wraper">
+                <img src="image-9.jpg">
+                <div class="item--content">
+                    <div class="item--content--header">
+                        <h5>Buttermilk Pancakes</h5>
+                        <span>$15.99</span>
+                    </div>
+                    <p class="content--desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, accusamus?
+                    </p>
+                </div>
+            </div>
+            <!------------2------------->
+            <div class="items--wraper">
+                <img src="image-10.jpg">
+                <div class="item--content">
+                    <div class="item--content--header">
+                        <h5>Dinner Double</h5>
+                        <span>$13.99</span>
+                    </div>
+                    <p class="content--desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, accusamus?
+                    </p>
+                </div>
+            </div>
+            <!------------------3---------------->
+            <div class="items--wraper">
+                <img src="image-11.jpg">
+                <div class="item--content">
+                    <div class="item--content--header">
+                        <h5>Dinner Double</h5>
+                        <span>$13.99</span>
+                    </div>
+                    <p class="content--desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, accusamus?
+                    </p>
+                </div>
+            </div>
+            <!----------4--------------->
+            <div class="items--wraper">
+                <img src="image-12.jpg">
+                <div class="item--content">
+                    <div class="item--content--header">
+                        <h5>Dinner Double</h5>
+                        <span>$13.99</span>
+                    </div>
+                    <p class="content--desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, accusamus?
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-------------------------------------------------------->
+        <!-----------------------shakes-------------------------->
+        <div class="main--item--wrap" id="shakes-items">
+            <div class="items--wraper">
+                <img src="shake1.jpg">
+                <div class="item--content">
+                    <div class="item--content--header">
+                        <h5>Buttermilk Pancakes</h5>
+                        <span>$15.99</span>
+                    </div>
+                    <p class="content--desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, accusamus?
+                    </p>
+                </div>
+            </div>
+            <!------------2------------->
+            <div class="items--wraper">
+                <img src="shake2.jpg">
+                <div class="item--content">
+                    <div class="item--content--header">
+                        <h5>Dinner Double</h5>
+                        <span>$13.99</span>
+                    </div>
+                    <p class="content--desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, accusamus?
+                    </p>
+                </div>
+            </div>
+            <!------------------3---------------->
+            <div class="items--wraper">
+                <img src="shake3.jpg">
+                <div class="item--content">
+                    <div class="item--content--header">
+                        <h5>Dinner Double</h5>
+                        <span>$13.99</span>
+                    </div>
+                    <p class="content--desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, accusamus?
+                    </p>
+                </div>
+            </div>
+            <!----------4--------------->
+            <div class="items--wraper">
+                <img src="shake4.jpg">
+                <div class="item--content">
+                    <div class="item--content--header">
+                        <h5>Dinner Double</h5>
+                        <span>$13.99</span>
+                    </div>
+                    <p class="content--desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, accusamus?
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-------------------------------------------------------->
+        <!-----------------------dinner-------------------------->
+        <div class="main--item--wrap" id="dinner-items">
+            <div class="items--wraper">
+                <img src="dinner1.jpg">
+                <div class="item--content">
+                    <div class="item--content--header">
+                        <h5>Buttermilk Pancakes</h5>
+                        <span>$15.99</span>
+                    </div>
+                    <p class="content--desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, accusamus?
+                    </p>
+                </div>
+            </div>
+            <!------------2------------->
+            <div class="items--wraper">
+                <img src="dinner2.jpg">
+                <div class="item--content">
+                    <div class="item--content--header">
+                        <h5>Dinner Double</h5>
+                        <span>$13.99</span>
+                    </div>
+                    <p class="content--desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, accusamus?
+                    </p>
+                </div>
+            </div>
+            <!------------------3---------------->
+            <div class="items--wraper">
+                <img src="dinner3.jpg">
+                <div class="item--content">
+                    <div class="item--content--header">
+                        <h5>Dinner Double</h5>
+                        <span>$13.99</span>
+                    </div>
+                    <p class="content--desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, accusamus?
+                    </p>
+                </div>
+            </div>
+            <!----------4--------------->
+            <div class="items--wraper">
+                <img src="dinner4.jpg">
+                <div class="item--content">
+                    <div class="item--content--header">
+                        <h5>Dinner Double</h5>
+                        <span>$13.99</span>
+                    </div>
+                    <p class="content--desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, accusamus?
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-------------------------------------------------------->
+    </div>
+
+    <script>
+        const buttons = document.querySelectorAll(".btn--wraper button");
+        const sections = document.querySelectorAll(".main--item--wrap");
+
+        buttons.forEach(btn => {
+            btn.addEventListener("click", () => {
+
+
+                buttons.forEach(b => b.classList.remove("active"));
+                btn.classList.add("active");
+
+
+                sections.forEach(section => {
+                    section.style.display = "none";
+                });
+
+
+                const targetId = btn.getAttribute("data-target");
+                const targetSection = document.getElementById(targetId);
+
+                if (targetSection) {
+                    targetSection.style.display = "grid";
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

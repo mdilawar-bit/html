@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form 3</title>
+    <style>
+        body{
+            box-sizing: border-box;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+.parent{
+    width: 100%;
+    
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 70vh;
+    
+    
+}
+.form--wraper{
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 100%;
+}
+form{
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+form input{
+padding: 15px;
+margin: 10px;
+box-sizing: border-box;
+width: calc( 50% - 24px );
+border-radius: 30px;
+
+}
+form textarea{
+    width: calc( 100% - 62px );
+    margin: 10px;
+    padding: 20px;
+    border-radius: 30px;
+    
+}
+form textarea::placeholder{
+    color: black;
+}
+form ::placeholder{
+    color: black;
+}
+
+form button{
+    padding: 15px;
+    width: 15%;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    font-size: 20px;
+    align-content: center;
+}
+.textwrap{
+    width: 100%;
+}
+.btn--wrap{
+    width: 100%;
+    height: 80px;
+    margin-block: 20px;
+}
+.btn--wrap button{
+    position: absolute;
+    left: calc( 50% - 6% );
+}
+button:hover{
+    box-shadow: 0 0 30px blue;
+    background-color: blue;
+    color: black;
+}
+.parent h1{
+    text-align: center;
+    color: white;
+}
+.parent p{
+    text-align: center;
+    color: white;
+}
+.video--wrap{
+    height: 90%;
+    position: absolute;
+    z-index:-3;
+    width: 100%;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    
+}
+.video--wrap video{
+width: 100%;
+
+overflow: hidden;
+}
+.cf--wraper{
+    position: absolute;
+    width: 100%;
+}
+.cf--sub--wraper{
+    max-width: 800px;
+    margin: 50px auto;
+    backdrop-filter: blur(20px);
+    padding: 10px;
+    border-radius: 50px;
+}
+@media screen and (max-width:1020px){
+    .video--wrap video{
+        height: 100vh;
+        object-fit: cover;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="cf--wraper">
+            <div class="cf--sub--wraper">
+        <h1>GET IN TOUCH</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, ea.</p>
+<form>
+    <div class="form--wraper">
+        <div class="text--wrap">
+<input type="text" placeholder="Name">
+
+<input type="email" placeholder="E-Mail">
+</div>
+<textarea placeholder="Your Message"></textarea>
+<div class="btn--wrap">
+<button type="submit">Send</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+ <div class="video--wrap">
+        <video  src="/video/2759477-uhd_3840_2160_30fps.mp4" width="100%;" autoplay loop muted></video>
+    </div>
+
+    </div>
+   
+
+</body>
+</html>

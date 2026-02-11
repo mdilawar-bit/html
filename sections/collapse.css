@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    padding: 0;
+
+}
+.main--parent{
+    width: 100%;
+    position: relative;
+    margin-top: 30px;
+}
+.collapsible--main{
+     width: 100%;
+    position: absolute;
+    height: 90vh;
+}
+.collapsible{
+ border-radius: 20px;
+    backdrop-filter:grayscale(3);
+    margin:50px auto;
+    width: 60%;
+    box-sizing: border-box;
+    overflow: hidden;
+    
+}
+.video--wrap{
+     position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -3;
+    
+    margin: 0;
+    padding: 0;
+}
+.video--wrap  video {
+  height: 90vh;
+    object-fit: cover;
+    aspect-ratio: 4;
+}
+.collapsible-tab label{
+    font-size: 20px;
+    color: white;
+    background-color: rgb(32, 177, 3);
+    line-height: 22px;
+    position: relative;
+    display: block;
+    padding: 10px;
+    border-radius: 20px;
+}
+.collapsible-tab label i{
+    position: absolute;
+    right: 5%;
+    top: 25%;
+    transform: rotate(0deg);
+    transition: all .4s;
+}
+input[type=checkbox]{
+    display: none;
+
+}
+input[type=radio]{
+        display: none;
+
+}
+.collapsible-tab{
+    width: 100%;
+  border-radius: 20px;
+    margin: 30px auto;
+    background-color: rgb(220, 226, 224);
+    
+}
+.collapsible-content{
+    max-height: 0;
+    transition: all .5s;
+    overflow: hidden;
+}
+.collapsible-content p{
+    padding: 10px;
+    line-height: 25px;
+}
+.collapsible-tab .collapsible-toogle:checked ~ .collapsible-content{
+    max-height: 600px;
+    
+}
+input:checked ~  label i{
+       transform: rotate(180deg);
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href="style.css">
+    <style>
+        .about--parent--wrapper {
+            max-width: 90%;
+            margin: 20px auto;
+            box-sizing: border-box;
+            background-image: url(background\ image.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+            color: white;
+            background-position: center;
+            h1 {
+                text-align: center;
+                padding-top: 20px;
+            }
+        }
+        
+        .main--about--us--wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding-block: 20px;
+        }
+        
+        .child--wrapper {
+            flex-basis: 30%;
+            img {
+                width: 100%;
+            }
+        }
+        
+        .child--1 {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .image--wrapper {
+            height: 100%;
+            img {
+                height: 100%;
+                object-fit: cover;
+                border-radius: 20px;
+            }
+        }
+        
+        .child--3 {
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 10px;
+        }
+        
+        .child--4 {
+            display: flex;
+            flex-direction: row;
+            flex-basis: 90%;
+            gap: 10px;
+            margin-block: 20px;
+        }
+        
+        .child--5 {
+            display: flex;
+            flex-direction: row-reverse;
+            flex-basis: 90%;
+            gap: 10px;
+            margin-block: 20px;
+        }
+        
+        .content--wrapper {
+            background: transparent;
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            border: 1px solid white;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="about--parent--wrapper">
+        <h1>About Us</h1>
+        <div class="main--about--us--wrapper">
+
+            <div class="child--wrapper child--1">
+                <div class="image--wrapper">
+                    <img src="image-1.jpg">
+                </div>
+                <div class="content--wrapper">
+                    <h2>Lorem, ipsum.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+            </div>
+            <div class="child--wrapper child--2">
+                <div class="image--wrapper">
+                    <img src="image-2.jpg">
+                </div>
+
+            </div>
+            <div class="child--wrapper child--3">
+                <div class="image--wrapper">
+                    <img src="image-3.jpg">
+                </div>
+                <div class="content--wrapper">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, fugiat.</p>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+            <!------------------------------------------------------------->
+            <div class="child--wrapper child--4">
+                <div class="image--wrapper">
+                    <img src="image-3.jpg">
+                </div>
+                <div class="content--wrapper">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptate officia sequi at eveniet, rerum iusto alias voluptates. Ipsum, ad!</p>
+                </div>
+            </div>
+            <div class="child--wrapper child--5">
+                <div class="image--wrapper">
+                    <img src="image-3.jpg">
+                </div>
+                <div class="content--wrapper">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, nam expedita! Illo ab nesciunt optio delectus accusamus cumque iure cupiditate.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

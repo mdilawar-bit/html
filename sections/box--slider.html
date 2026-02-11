@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box--slider</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        .swiper {
+            width: 100%;
+            height: 100%;
+             
+                 background-image: url(images/banner_slider_bg.jpg);
+                background-size: cover;
+          
+          
+            
+            }
+
+            .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+             
+            }
+
+            .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+           
+        
+            }
+
+.slider--image--heading{
+        position: absolute;
+    left: 25%;
+    top: 10%;
+
+}
+.next--image{
+    width: 25px;
+    cursor: pointer;
+    img{
+        width: 100%;
+    }
+}
+.prev--image{
+    width: 25px;
+    transform: rotate(180deg);
+    cursor: pointer;
+    img{
+        width: 100%;
+    }
+}
+.swiper-button-prev:after{
+    content: initial;
+}
+.swiper-button-next:after{
+    content: initial;
+}
+@media screen and (max-width:768px) {
+    .slider--image--heading{
+        position: initial;
+        font-size: 12px;
+    
+}
+.next--image
+ {
+    width: 20px;
+}
+.prev--image{
+    width: 20px;
+}
+}
+
+    </style>
+</head>
+<body>
+     <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="slider--wraper">
+           <h3 class="slider--image--heading">Lorem ipsum dolor sit amet consectetur.</h3>
+           <img src="/images html/banner_slider_handstrechf_oT.png">
+        </div>
+      </div>
+      <div class="swiper-slide">
+          <div class="slider--wraper">
+           <h3 class="slider--image--heading">Lorem ipsum dolor sit amet consectetur.</h3>
+           <img src="/images html/banner_slider_pptape_oT.png">
+        </div>
+    </div>
+      <div class="swiper-slide">Slide 3</div>
+      <div class="swiper-slide">Slide 4</div>
+      <div class="swiper-slide">Slide 5</div>
+      <div class="swiper-slide">Slide 6</div>
+      <div class="swiper-slide">Slide 7</div>
+      <div class="swiper-slide">Slide 8</div>
+      <div class="swiper-slide">Slide 9</div>
+    </div>
+    <div class="swiper-button-next next--image"><img src="https://cdn.shopify.com/s/files/1/0984/4945/7490/files/right.png?v=1763744337"> </div>
+    <div class="swiper-button-prev prev--image"><img src="https://cdn.shopify.com/s/files/1/0984/4945/7490/files/right.png?v=1763744337"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+        loop:true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+       pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+</body>
+</html>

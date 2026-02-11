@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Announcement Bar</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .announcement--bar--wrapper {
+            width: 100%;
+            background-color: #BC2469;
+            color: white;
+            padding: 0;
+            overflow: hidden;
+        }
+        
+        .announcement--bar--content {
+            font-size: 17px;
+            color: white;
+            white-space: nowrap;
+            padding: 5px;
+        }
+        
+        .announcement--bar--content ul {
+            display: flex;
+            list-style: none;
+            justify-content: space-around;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .announcement--bar--content ul li:last-child {
+            gap: 12px;
+        }
+        
+        .announcement--bar--content ul li:last-child .icon--img--wrap {
+            width: 80px;
+            height: 20px;
+            border-radius: 10px;
+        }
+        
+        .announcement--bar--content ul li {
+            display: flex;
+            margin-left: 0;
+            align-items: self-start;
+            gap: 3px;
+        }
+        
+        .icon--img--wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            /* padding-right: 10px; */
+        }
+        
+        .icon--img--wrap {
+            width: 30px;
+            height: 20px;
+            object-fit: cover;
+        }
+        
+        .swiper {
+            width: 100%;
+            height: 100%;
+            display: none;
+        }
+        
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #BC2469;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .swiper {
+                display: block;
+            }
+            .swiper-slide li {
+                display: flex;
+                margin-left: 0;
+                align-items: self-start;
+                gap: 3px;
+            }
+            .swiper-slide .mbl--last--icon {
+                width: 100px;
+                height: 20px;
+                border-radius: 10px;
+            }
+            .announcement--bar--content ul {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="announcement--bar--wrapper">
+        <div class="announcement--bar--content">
+            <ul class="ann--bar--list">
+                <li><span class="icon--img--wrap"><img src="fast-delivery (1).png"></span>This is an announcement bar. </li>
+
+                <li><span class="icon--img--wrap"><img src="fast-delivery (1).png"></span>This is an announcement bar. </li>
+
+                <li><span class="icon--img--wrap"><img src="fast-delivery (1).png"></span>This is an announcement bar. </li>
+
+                <li>
+                    <span class="icon--img--wrap"><img src="klarna icon.png"></span>
+                    <span class="icon--img--wrap"><img src="after pay icon.jpg"></span>
+                    <span class="icon--img--wrap"><img src="zip pay icon.jpg"></span>
+                </li>
+
+
+            </ul>
+
+            <!---------------------mobile layout------------------------------------->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <li><span class="icon--img--wrap"><img src="fast-delivery (1).png"></span>This is an announcement bar. </li>
+                    </div>
+                    <div class="swiper-slide">
+                        <li><span class="icon--img--wrap"><img src="fast-delivery (1).png"></span>This is an announcement bar. </li>
+                    </div>
+                    <div class="swiper-slide">
+                        <li><span class="icon--img--wrap"><img src="fast-delivery (1).png"></span>This is an announcement bar. </li>
+                    </div>
+                    <div class="swiper-slide last--icon--wrap">
+                        <li>
+                            <span class="icon--img--wrap mbl--last--icon"><img src="klarna icon.png"></span>
+                            <span class="icon--img--wrap mbl--last--icon"><img src="after pay icon.jpg"></span>
+                            <span class="icon--img--wrap mbl--last--icon"><img src="zip pay icon.jpg"></span>
+                        </li>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                loop: true,
+            });
+        </script>
+</body>
+
+</html>

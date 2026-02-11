@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawer menu</title>
+    <style>
+.main--wraper{
+    width: fit-content;
+
+}
+
+.toogle{
+width: 40px;
+box-shadow: 3px 3px 5px #eee, -3px -3px 5px #eee ,-3px 3px 5px #eee,3px -3px 5px #eee;
+height: 40px;
+margin: 10px;
+position: relative;
+z-index: 2;
+cursor: pointer;
+}
+.top-line{
+   width: 30px;
+    background-color: black;
+    display: block;
+    height: 2px;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+}
+.center-line{
+    width: 30px;
+    background-color: black;
+    display: block;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+.bottom-line{
+    width: 30px;
+    background-color: black;
+    display: block;
+    height: 2px;
+    position: absolute;
+    top: 75%;
+    left: 10%;
+}
+
+.slide{
+    background-color: crimson;
+    color: aliceblue;
+    text-align: center;
+    width: 230px;
+    top:0px ;
+    position: absolute;
+    transition: 0.5s ease;
+    transform: translateX(-230px);
+  
+    
+     
+}
+.slide  li{
+            
+        list-style: none;
+        margin:10px auto;
+            padding: 10px;
+     
+
+}
+body .slide ul{
+    
+position: relative !important;
+    z-index: 1 !important;
+    padding: 0%;
+}
+.slide a{
+    color: black;
+   text-underline-offset: 3px;
+    
+}
+.slide h1{
+    text-align: center;
+}
+input:checked ~ .slide{
+    transform: translateX(0px);
+}
+input:checked ~ .toogle .top-line{
+    transform: rotate(45deg) ;
+    transition: ease 0.3s;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+
+}
+input:checked ~ .toogle .center-line{
+    transform: rotate(-45deg) ;
+position: absolute;
+transition: ease 0.3s;
+    top: 50%;
+    left: 10%;}
+        
+
+input:checked ~ .toogle .bottom-line{
+    display: none;
+}
+
+input{
+    display: none;
+}
+.align{
+    width: 50%;
+    height: 50%;
+    border: 2px solid black;
+    margin: 20px;
+    position: absolute;
+    left: calc( 50% - 25% - 2px - 20px );
+    top: calc( 50% - 25% - 20px - 2px );
+}
+#parent--outer{
+    width: 100%;
+    position: relative;
+    border: 1px solid red;
+    height: 100vh;
+    box-sizing: border-box;
+    z-index: -1;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="main--wraper">
+          <label> 
+              <input  type="checkbox">
+         
+                   <div class="toogle"> 
+                        <span class="top-line common"></span>
+                        <span class="center-line common"></span>
+                        <span class="bottom-line common"></span>
+                    </div>
+        
+                    <div class="slide">
+                        <h1>MENU</h1>
+                        <ul>
+                            <li> <a href=""> HOME</a> </li>
+                            <li> <a href=""> ABOUT US</a> </li>
+                            <li> <a href=""> CONTACT US</a> </li>
+                            <li> <a href="">SERVICES</a> </li>
+                            <li> <a href="">PRODUCTS</a> </li>
+                            <li> <a href=""> COLLECTIONS</a> </li>
+                        </ul>
+
+                    </div>
+          </label> 
+
+    </div>
+
+  
+</body>
+</html>

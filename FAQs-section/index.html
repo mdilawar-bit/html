@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs Section</title>
+    <link rel="stylesheet " href="style.css">
+</head>
+
+<body>
+    <div class="main--faq--wrapper">
+        <div class="faq--parent--wrapper">
+            <div class="faq--child--1">
+                <h1>Your Questions Answered</h1>
+                <p>Everything You Need to Know Before Starting Your Journey</p>
+                <a href="#">See all FAQs</a>
+            </div>
+            <!------------------------------------>
+            <div class="faq--child--2">
+                <div class="faq--item">
+                    <button class="faq--question">
+                   Why is it 21+?
+                     <span class="question--icon">+</span>
+                    </button>
+                    <p class="faq--answer">Because it has active and real effects. New Brew contains active ingredients with real effects. As such, it is not suitable for those who are under 21 years of age. New Brew strongly supports emerging standards and regulatory frameworks
+                        stipulating that these ingredients only be sold to responsible adults 21 years or older.</p>
+                </div>
+                <!------------------------------------->
+                <div class="faq--item">
+                    <button class="faq--question">
+                  How will I feel?
+                     <span class="question--icon">+</span>
+                    </button>
+                    <p class="faq--answer"> New Brew produces a non-inebriating bliss with a symphony of effects that include an attitude shift and a balanced feeling of calm, clarity and connection. Please listen carefully to your body when you try New Brew and decide whether
+                        more is the right call. Sip slowly and assess your tolerance.</p>
+                </div>
+                <!------------------------------------------>
+                <div class="faq--item">
+                    <button class="faq--question">
+                   Can I drink more than one at a time?
+                     <span class="question--icon">+</span>
+                    </button>
+                    <p class="faq--answer"> Yes, but we recommend starting with one to see how you feel. Sip it slow to assess your tolerance, as everyone metabolizes New Brew differently, based on a range of physical and circumstantial factors. Most people will feel the effects
+                        after one serving.</p>
+                </div>
+                <!------------------------------------------->
+                <div class="faq--item">
+                    <button class="faq--question">
+                Is New Brew for everyone?
+                     <span class="question--icon">+</span>
+                    </button>
+                    <p class="faq--answer"> No, New Brew is intended for adults 21 and over. It’s not recommended for anyone with a history of substance abuse, and if you're pregnant, breastfeeding, or taking any medications, you should talk to your doctor before consuming.
+                        We want everyone to enjoy New Brew responsibly and safely.</p>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script>
+        document.querySelectorAll(".faq--question").forEach(button => {
+            button.addEventListener("click", () => {
+                const currentItem = button.parentElement;
+
+                document.querySelectorAll(".faq--item").forEach(item => {
+                    if (item !== currentItem) {
+                        item.classList.remove("active");
+                    }
+
+
+                });
+
+                currentItem.classList.toggle("active");
+                console.log("working")
+            })
+        })
+    </script>
+</body>
+
+</html>

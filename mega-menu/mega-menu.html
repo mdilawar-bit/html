@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Mega Menu Example</title>
+    <link rel="stylesheet" href="mega-menu.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="site-inner">
+            <div class="brand">Dilawar-Store</div>
+            <nav class="main-nav" role="navigation" aria-label="Main">
+                <ul role="menubar">
+                    <!-- Custom mega: menu + images -->
+                    <li class="nav-item has-mega" data-panel="shop" tabindex="0" role="none">
+                        <button id="shop-btn" class="nav-link" role="menuitem" aria-haspopup="true" aria-expanded="false" aria-controls="shop-panel">Shop <span class="caret">&#9662;</span></button>
+                        <div id="shop-panel" class="mega-panel shop-panel" role="menu" aria-hidden="true" tabindex="-1">
+                            <div class="mega-grid shop-grid">
+                                <div class="mega-col shop-menu">
+                                    <h4>Shop By Category</h4>
+                                    <ul class="shop-menu-list" role="menu">
+                                        <li role="none">
+                                            <button class="shop-menu-item is-active" role="menuitem" aria-selected="true" aria-controls="shop-bridal" data-shop-target="shop-bridal">Bridal Sets</button>
+                                        </li>
+                                        <li role="none">
+                                            <button class="shop-menu-item" role="menuitem" aria-selected="false" aria-controls="shop-minimal" data-shop-target="shop-minimal">Minimal Essentials</button>
+                                        </li>
+                                        <li role="none">
+                                            <button class="shop-menu-item" role="menuitem" aria-selected="false" aria-controls="shop-color" data-shop-target="shop-color">Color Pop</button>
+                                        </li>
+                                        <li role="none">
+                                            <button class="shop-menu-item" role="menuitem" aria-selected="false" aria-controls="shop-gifts" data-shop-target="shop-gifts">Gift Picks</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="mega-col shop-images">
+                                    <div class="shop-images-panel is-active" id="shop-bridal" role="group" aria-label="Bridal Sets" aria-hidden="false">
+                                        <div class="shop-image-grid">
+                                            <figure class="shop-image-card">
+                                                <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=420&h=320&fit=crop" alt="Bridal necklace set">
+                                                <figcaption>Crystal Veil Set</figcaption>
+                                            </figure>
+                                            <figure class="shop-image-card">
+                                                <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=420&h=320&fit=crop" alt="Pearl earrings">
+                                                <figcaption>Pearl Drop Earrings</figcaption>
+                                            </figure>
+                                            <figure class="shop-image-card">
+                                                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=420&h=320&fit=crop" alt="Bridal bracelet">
+                                                <figcaption>Grace Bracelet</figcaption>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <div class="shop-images-panel" id="shop-minimal" role="group" aria-label="Minimal Essentials" aria-hidden="true">
+                                        <div class="shop-image-grid">
+                                            <figure class="shop-image-card">
+                                                <img src="https://images.unsplash.com/photo-1521577352947-9bb58764b69a?w=420&h=320&fit=crop" alt="Minimal necklace">
+                                                <figcaption>Fine Line Pendant</figcaption>
+                                            </figure>
+                                            <figure class="shop-image-card">
+                                                <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=420&h=320&fit=crop" alt="Stud earrings">
+                                                <figcaption>Everyday Studs</figcaption>
+                                            </figure>
+                                            <figure class="shop-image-card">
+                                                <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=420&h=320&fit=crop" alt="Minimal ring">
+                                                <figcaption>Plain Halo Ring</figcaption>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <div class="shop-images-panel" id="shop-color" role="group" aria-label="Color Pop" aria-hidden="true">
+                                        <div class="shop-image-grid">
+                                            <figure class="shop-image-card">
+                                                <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=420&h=320&fit=crop" alt="Color earrings">
+                                                <figcaption>Sunset Earrings</figcaption>
+                                            </figure>
+                                            <figure class="shop-image-card">
+                                                <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=420&h=320&fit=crop" alt="Color bracelets">
+                                                <figcaption>Gem Pop Bangles</figcaption>
+                                            </figure>
+                                            <figure class="shop-image-card">
+                                                <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=420&h=320&fit=crop" alt="Color necklace">
+                                                <figcaption>Vivid Prism Necklace</figcaption>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <div class="shop-images-panel" id="shop-gifts" role="group" aria-label="Gift Picks" aria-hidden="true">
+                                        <div class="shop-image-grid">
+                                            <figure class="shop-image-card">
+                                                <img src="https://images.unsplash.com/photo-1511556820780-d912e42b4980?w=420&h=320&fit=crop" alt="Gift set">
+                                                <figcaption>Ready Gift Set</figcaption>
+                                            </figure>
+                                            <figure class="shop-image-card">
+                                                <img src="https://images.unsplash.com/photo-1518544882184-8e2c7c9d1f6d?w=420&h=320&fit=crop" alt="Gift bracelet">
+                                                <figcaption>Heartline Bracelet</figcaption>
+                                            </figure>
+                                            <figure class="shop-image-card">
+                                                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=420&h=320&fit=crop" alt="Gift earrings">
+                                                <figcaption>Starfall Earrings</figcaption>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Collections mega -->
+                    <li class="nav-item has-mega" data-panel="collections" tabindex="0" role="none">
+                        <button id="collections-btn" class="nav-link" role="menuitem" aria-haspopup="true" aria-expanded="false" aria-controls="collections-panel">Collections <span class="caret">▾</span></button>
+                        <div id="collections-panel" class="mega-panel collections-panel" role="menu" aria-hidden="true" tabindex="-1">
+                            <div class="mega-grid">
+                                <div class="mega-col collections">
+                                    <h4>Shop By Collections</h4>
+                                    <ul class="collections-list">
+                                        <li>
+                                            <img src="https://images.unsplash.com/photo-1519744792095-2f2205e87b6f?w=80&h=80&fit=crop" alt="Crystal Earrings">
+                                            <a href="#">Crystal Earrings</a>
+                                        </li>
+                                        <li>
+                                            <img src="https://images.unsplash.com/photo-1520975912102-1aee8b7d3f2b?w=80&h=80&fit=crop" alt="Bracelets">
+                                            <a href="#">Bracelets</a>
+                                        </li>
+                                        <li>
+                                            <img src="https://images.unsplash.com/photo-1514078285378-23f99af7366c?w=80&h=80&fit=crop" alt="Necklaces">
+                                            <a href="#">Necklaces and pendants</a>
+                                        </li>
+                                        <li><a href="#">Rings with Crystals</a></li>
+                                        <li><a href="#">Accessories with Crystals</a></li>
+                                        <li><a href="#">Gift</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-col spacer"></div>
+                                <div class="mega-col promo">
+                                    <h4>Collection Spotlight</h4>
+                                    <div class="promo-card">
+                                        <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=400&h=300&fit=crop" alt="Promo">
+                                        <div class="promo-title">Crystal Classics</div>
+                                        <p class="promo-desc">Curated pieces from our best collections.</p>
+                                        <button class="btn">Shop collection</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Products mega -->
+                    <li class="nav-item has-mega" data-panel="products" tabindex="0" role="none">
+                        <button id="products-btn" class="nav-link" role="menuitem" aria-haspopup="true" aria-expanded="false" aria-controls="products-panel">Products <span class="caret">▾</span></button>
+                        <div id="products-panel" class="mega-panel products-panel" role="menu" aria-hidden="true" tabindex="-1">
+                            <div class="mega-grid">
+                                <div class="mega-col featured">
+                                    <h4>Best Sellers</h4>
+                                    <div class="featured-card">
+                                        <div class="featured-image"><img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=400&h=400&fit=crop" alt="Mesmera bracelet"></div>
+                                        <div class="featured-info">
+                                            <div class="product-title">Mesmera bracelet</div>
+                                            <div class="product-price">1.700₾</div>
+                                            <button class="btn">Add to cart</button>
+                                        </div>
+                                    </div>
+                                    <div class="mini-gallery">
+                                        <div class="mini-item">
+                                            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=120&h=120&fit=crop" alt="item">
+                                            <div class="mini-title">Swan drop earrings</div>
+                                            <button class="mini-btn">Add to cart</button>
+                                        </div>
+                                        <div class="mini-item">
+                                            <img src="https://images.unsplash.com/photo-1518544882184-8e2c7c9d1f6d?w=120&h=120&fit=crop" alt="item">
+                                            <div class="mini-title">Matrix hoop earrings</div>
+                                            <button class="mini-btn sold">Sold out</button>
+                                        </div>
+                                        <div class="mini-item">
+                                            <img src="https://images.unsplash.com/photo-1518057111170-a0128a7c1d8b?w=120&h=120&fit=crop" alt="item">
+                                            <div class="mini-title">Dextera hoop earrings</div>
+                                            <button class="mini-btn sold">Sold out</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mega-col spacer"></div>
+                                <div class="mega-col new-arrivals">
+                                    <h4>New Arrivals</h4>
+                                    <ul class="arrivals-list">
+                                        <li>
+                                            <img src="https://images.unsplash.com/photo-1536305030014-2fff0c49b4d1?w=64&h=64&fit=crop" alt="">
+                                            <div class="arrival-meta">
+                                                <div class="arrival-title">Swan drop earrings</div>
+                                                <div class="arrival-price">1.650₾</div>
+                                                <button class="arrival-btn">Add to cart</button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <img src="https://images.unsplash.com/photo-1526178614030-08ec5c2f6f8a?w=64&h=64&fit=crop" alt="">
+                                            <div class="arrival-meta">
+                                                <div class="arrival-title">Millenia drop earrings</div>
+                                                <div class="arrival-price">1.500₾</div>
+                                                <button class="arrival-btn sold">Sold out</button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <img src="https://images.unsplash.com/photo-1518057111170-a0128a7c1d8b?w=64&h=64&fit=crop" alt="">
+                                            <div class="arrival-meta">
+                                                <div class="arrival-title">Idyllia drop earrings</div>
+                                                <div class="arrival-price">1.600₾</div>
+                                                <button class="arrival-btn">Add to cart</button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Links mega with deep submenus -->
+                    <li class="nav-item has-mega" data-panel="links" tabindex="0" role="none">
+                        <button id="links-btn" class="nav-link" role="menuitem" aria-haspopup="true" aria-expanded="false" aria-controls="links-panel">Resources <span class="caret">▾</span></button>
+                        <div id="links-panel" class="mega-panel links-panel" role="menu" aria-hidden="true" tabindex="-1">
+                            <div class="mega-grid links-grid">
+                                <div class="mega-col links">
+                                    <h4>Categories</h4>
+                                    <ul class="links-list">
+                                        <li class="has-sub">
+                                            <button class="sub-toggle" aria-expanded="false">Shop Guides ▸</button>
+                                            <ul class="sub-menu" role="menu">
+                                                <li role="none"><a role="menuitem" href="#">How to choose a ring</a></li>
+                                                <li role="none"><a role="menuitem" href="#">Care & maintenance</a></li>
+                                                <li role="none"><a role="menuitem" href="#">Sizing guide</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-sub">
+                                            <button class="sub-toggle" aria-expanded="false">Brand Stories ▸</button>
+                                            <ul class="sub-menu" role="menu">
+                                                <li role="none"><a role="menuitem" href="#">Our heritage</a></li>
+                                                <li role="none"><a role="menuitem" href="#">Craftsmanship</a></li>
+                                                <li role="none"><a role="menuitem" href="#">Sustainability</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Gift Cards</a></li>
+                                        <li><a href="#">Contact us</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-col spacer"></div>
+                                <div class="mega-col help">
+                                    <h4>Quick Links</h4>
+                                    <ul class="quick-links">
+                                        <li><a href="#">Shipping & Returns</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                        <li><a href="#">Terms</a></li>
+                                        <li><a href="#">Store Locator</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><a href="#">Examples</a></li>
+                    <li><a href="#">Masonry</a></li>
+                    <li><a href="#">Flyout</a></li>
+                </ul>
+            </nav>
+
+            <div class="icons">
+                <button class="search">🔍</button>
+                <button class="cart">🛒</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <section style="padding:60px;text-align:center;">Open the "Shop" menu to view the custom mega menu demo.</section>
+    </main>
+
+    <script src="mega-menu.js"></script>
+</body>
+
+</html>

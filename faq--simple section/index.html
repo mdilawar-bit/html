@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple FAQs | mdilawar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="s--faq--parent">
+        <div class="hedaing--wrap">
+            <h1 class="s--heading">Frequently Asked Questions</h1>
+        </div>
+        <!--------------------------------1------------------------------>
+        <div class="s--faq--item">
+            <button class="s--faq--question">
+               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, aliquid.
+                <span class="s--faq--icon">+</span>
+            </button>
+            <p class="s--faq--answer">
+                Because it has active and real effects. New Brew contains active ingredients with real effects. As such, it is not suitable for those who are under 21 years of age. New Brew strongly supports emerging standards and regulatory frameworks stipulating that
+                these ingredients only be sold to responsible adults 21 years or older.
+            </p>
+        </div>
+        <!---------------------------------2---------------------->
+        <div class="s--faq--item">
+            <button class="s--faq--question">
+               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, aliquid.
+                <span class="s--faq--icon">+</span>
+            </button>
+            <p class="s--faq--answer">
+                Because it has active and real effects. New Brew contains active ingredients with real effects. As such, it is not suitable for those who are under 21 years of age. New Brew strongly supports emerging standards and regulatory frameworks stipulating that
+                these ingredients only be sold to responsible adults 21 years or older.
+            </p>
+        </div>
+        <!---------------------------------3------------------------------->
+        <div class="s--faq--item">
+            <button class="s--faq--question">
+               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, aliquid.
+                <span class="s--faq--icon">+</span>
+            </button>
+            <p class="s--faq--answer">
+                Because it has active and real effects. New Brew contains active ingredients with real effects. As such, it is not suitable for those who are under 21 years of age. New Brew strongly supports emerging standards and regulatory frameworks stipulating that
+                these ingredients only be sold to responsible adults 21 years or older.mdilawar
+            </p>
+        </div>
+        <!-----------------------------------4-------------------------->
+        <div class="s--faq--item">
+            <button class="s--faq--question">
+               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, 
+                <span class="s--faq--icon">+</span>
+            </button>
+            <p class="s--faq--answer">
+                Because it has active and real effects. New Brew contains active ingredients with real effects. As such, it is not suitable for those who are under 21 years of age. New Brew strongly supports emerging standards and regulatory frameworks stipulating that
+                these ingredients only be sold to responsible adults 21 years or older.mdilawar
+            </p>
+        </div>
+        <!-----------------------------------5--------------------------------->
+        <div class="s--faq--item">
+            <button class="s--faq--question">
+               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, aliquid.
+                <span class="s--faq--icon">+</span>
+            </button>
+            <p class="s--faq--answer">
+                Because it has active and real effects. New Brew contains active ingredients with real effects. As such, it is not suitable for those who are under 21 years of age. New Brew strongly supports emerging standards and regulatory frameworks stipulating that
+                these ingredients only be sold to responsible adults 21 years or older.
+            </p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script>
+        document.querySelectorAll(".s--faq--question").forEach(button => {
+            button.addEventListener("click", () => {
+                const currentItem = button.parentElement;
+                console.log("working--1");
+                document.querySelectorAll(".s--faq--item").forEach(item => {
+                    if (item !== currentItem) {
+                        item.classList.remove("active")
+                        console.log("working--2");
+                    }
+                });
+
+
+                currentItem.classList.toggle("active");
+                console.log("working");
+            });
+        })
+    </script>
+</body>
+
+</html>

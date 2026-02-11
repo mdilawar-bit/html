@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        .sub--parent--2{
+            max-width: 515px;
+            border: 1px solid black;
+        }
+        form{
+        
+        margin: 10px;
+        }
+form label{
+    padding: 5px 10px;
+    display:block ;
+    font-size: 20px;
+}
+form input{
+    padding: 10px;
+    margin:16px 10px;
+}
+form button{
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+}
+
+::placeholder{
+    color: black;
+}
+textarea{
+    width: 80%;
+    margin:10px;
+}
+textarea ::placeholder {
+color: black
+
+}
+
+.box--wrap{
+display: flex;
+    padding: 0%;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="main--parent">
+<div class="sub--parent--1">
+
+
+
+</div>
+                
+            <div class=" sub--parent--2">
+
+                    <form>
+                        <div>
+                            <label> Name</label>
+                                <input type="text" placeholder="First Name">
+
+                                <input type="text" placeholder="Last Name">
+                        </div>
+                        <div class="mail--wrap">
+
+                            <label>E-Mail</label>
+                        
+
+                            <input type="email" placeholder="E-Mail">
+                
+                            <label>Phone Number</label>
+                            <input type="tel" placeholder="Phone Number">
+
+                        </div>
+                        <div>
+                            <label>Your Message</label>
+                            <textarea placeholder="Your Message" rows="5" ></textarea>
+                            </div>
+                    <div class="box--wrap">
+                            <input type="checkbox">
+                            <label>Save my name, email, and website in this browser.</label>
+
+                        </div>
+                        <div class="btn">
+                            <button type="submit">Send</button>
+                        </div>
+                    </form>
+            </div>
+    </div>
+</body>
+</html>

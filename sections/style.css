@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(219, 227, 241);
+    margin: 0%;
+}
+header a{
+    text-decoration: none;
+    color: black;
+}
+body button:hover{
+background-color: cornflowerblue;
+color:white ;
+}
+body a:hover{
+background-color: cornflowerblue;
+color:white ;
+padding: 5px 10px;
+
+}
+#social-links li{
+    cursor: pointer;
+}
+header{
+    display: flex;
+    background-color: #b9d0f7;
+    
+    align-items: center;
+}
+#logo{
+    margin: 0 auto;
+    font-size: 30px;
+    cursor: pointer;
+}
+header ul{
+    display: flex;
+    list-style: none;
+    padding-left: 0%;
+    
+}
+header ul li{
+    padding: 10px;
+}
+.service-container{
+    display: flex;
+    justify-content: space-between;
+}
+.service-box{
+border: 1px solid #eee;
+padding: 10px;
+flex-basis: 32%;
+max-width: 370px;
+
+}
+.service-box img{
+    width: 100%;
+    
+    object-fit: contain;
+}
+.service-box h3{
+    display: block;
+    
+}
+.service-box button{
+    padding: 10px 20px;
+}
+#main{
+    display: flex;
+}
+aside{
+    flex:0 0 20%;
+    background-color: #b9d0f7;
+}
+article{
+    flex: 0 0 79%;
+    padding: 10px;
+}
+aside img{
+    width: 100%;
+    padding: 20px;
+}
+aside a{
+    text-decoration: none;
+    color: black;
+}
+aside ul{
+    list-style: none;
+    padding-inline-start: 0%;
+}
+aside ul li{
+    display: block;
+    padding: 10px;
+    border-bottom: 2px solid #eee;
+
+}
+.footer-main{
+    border: 2px solid #eee;
+    padding: 20px;
+    background-color: #b9d0f7;
+    display: flex;
+
+}
+.newsletter{
+    flex-basis: 40%;
+    
+
+}
+.newsletter div{
+    padding: 20px 5px;
+}
+.newsletter h4{
+    font-size: 25px;
+}
+.newsletter input{
+    border: 1px solid black;
+padding:10px 20px ;
+}
+.newsletter button{
+    padding: 10px 20px;
+    
+}
+.socialize{
+    flex-basis: 19%;
+}
+.socialize h4{
+    font-size: 20px;
+}
+.socialize ul{
+    list-style: none;
+    padding-inline-start: 0%;
+}
+.socialize ul li{
+    display: block;
+    padding: 10px 5px;
+    
+}
+.socialize a{
+    text-decoration: none;
+    color: black;
+}
+.socialize a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+    text-decoration-thickness: 2px;
+}
