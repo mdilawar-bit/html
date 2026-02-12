@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M Dilawar Zaman - Frontend Developer & Shopify Expert</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">◆</span>MDZ
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-image-wrapper">
+                <img src="my---image.png" alt="M Dilawar Zaman" class="hero-image">
+                <div class="image-border"></div>
+            </div>
+            <h1 class="hero-title">M Dilawar Zaman</h1>
+            <p class="hero-subtitle">Frontend Web Developer & Shopify Expert</p>
+            <p class="hero-description">Crafting beautiful, responsive, and user-friendly digital experiences with modern web technologies.</p>
+            <div class="hero-buttons">
+                <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+            <div class="hero-social">
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:rraodilawarzaman@gmail.com" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Hello! I'm Dilawar</h3>
+                    <p>I'm a passionate Frontend Web Developer and Shopify Expert with a strong focus on creating responsive, modern, and user-centric web experiences. With expertise in HTML, CSS, JavaScript, and Shopify theme customization, I help businesses
+                        build stunning digital properties that convert visitors into customers.</p>
+                    <p>My approach combines technical excellence with creative design thinking, ensuring every project not only looks great but performs exceptionally well.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h4>50+</h4>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>30+</h4>
+                            <p>Happy Clients</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>5+</h4>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section with 4 Cards -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">My Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML</h3>
+                    <p>Semantic markup, accessibility, and SEO-optimized structure for modern web standards.</p>
+                    <div class="skill-level">
+                        <div class="progress-bar" style="width: 95%"></div>
+                    </div>
+                    <span class="skill-percent">95%</span>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3>CSS</h3>
+                    <p>Responsive design, animations, flexbox, grid, SCSS, and modern styling techniques.</p>
+                    <div class="skill-level">
+                        <div class="progress-bar" style="width: 92%"></div>
+                    </div>
+                    <span class="skill-percent">92%</span>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <p>DOM manipulation, ES6+, async programming, API integration, and interactive features.</p>
+                    <div class="skill-level">
+                        <div class="progress-bar" style="width: 90%"></div>
+                    </div>
+                    <span class="skill-percent">90%</span>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3>Shopify</h3>
+                    <p>Theme customization, liquid templating, Shopify app integration, and e-commerce optimization.</p>
+                    <div class="skill-level">
+                        <div class="progress-bar" style="width: 93%"></div>
+                    </div>
+                    <span class="skill-percent">93%</span>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3>React</h3>
+                    <p>Component-based architecture, hooks, state management, and performance optimization.</p>
+                    <div class="skill-level">
+                        <div class="progress-bar" style="width: 85%"></div>
+                    </div>
+                    <span class="skill-percent">85%</span>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Responsive Design</h3>
+                    <p>Mobile-first approach, cross-browser compatibility, and device optimization.</p>
+                    <div class="skill-level">
+                        <div class="progress-bar" style="width: 94%"></div>
+                    </div>
+                    <span class="skill-percent">94%</span>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>User-centered design, wireframing, prototyping, and design systems creation.</p>
+                    <div class="skill-level">
+                        <div class="progress-bar" style="width: 88%"></div>
+                    </div>
+                    <span class="skill-percent">88%</span>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <h3>Web Tools</h3>
+                    <p>Git, npm, webpack, testing frameworks, and development best practices.</p>
+                    <div class="skill-level">
+                        <div class="progress-bar" style="width: 87%"></div>
+                    </div>
+                    <span class="skill-percent">87%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">My Work</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-adbbb191c28f?w=500&h=300&fit=crop" alt="E-commerce Platform">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>E-commerce Platform</h3>
+                        <p class="tech-stack">HTML • CSS • JavaScript • React</p>
+                        <p class="description">A fully responsive e-commerce platform with product filtering, shopping cart, and checkout process.</p>
+                        <div class="portfolio-links">
+                            <a href="#" class="link-btn" target="_blank">
+                                <i class="fas fa-globe"></i> Live Demo
+                            </a>
+                            <a href="#" class="link-btn" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=300&fit=crop" alt="Shopify Store">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Premium Shopify Store</h3>
+                        <p class="tech-stack">Shopify • Liquid • CSS • JavaScript</p>
+                        <p class="description">Custom Shopify theme with advanced customization, dynamic product displays, and conversion optimization.</p>
+                        <div class="portfolio-links">
+                            <a href="#" class="link-btn" target="_blank">
+                                <i class="fas fa-globe"></i> Live Demo
+                            </a>
+                            <a href="#" class="link-btn" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1553992889-2d455d00ea20?w=500&h=300&fit=crop" alt="Agency Website">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Digital Agency Website</h3>
+                        <p class="tech-stack">HTML • CSS • JavaScript • Animations</p>
+                        <p class="description">Modern, animated agency website with smooth scrolling, interactive elements, and engaging UI.</p>
+                        <div class="portfolio-links">
+                            <a href="#" class="link-btn" target="_blank">
+                                <i class="fas fa-globe"></i> Live Demo
+                            </a>
+                            <a href="#" class="link-btn" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=500&h=300&fit=crop" alt="SaaS Dashboard">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>SaaS Dashboard</h3>
+                        <p class="tech-stack">React • JavaScript • CSS • APIs</p>
+                        <p class="description">Interactive SaaS dashboard with real-time data visualization, charts, and responsive layout.</p>
+                        <div class="portfolio-links">
+                            <a href="#" class="link-btn" target="_blank">
+                                <i class="fas fa-globe"></i> Live Demo
+                            </a>
+                            <a href="#" class="link-btn" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=500&h=300&fit=crop" alt="Landing Page">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Conversion Landing Page</h3>
+                        <p class="tech-stack">HTML • CSS • JavaScript</p>
+                        <p class="description">High-converting landing page with optimized layout, CTA buttons, and engaging copy for lead generation.</p>
+                        <div class="portfolio-links">
+                            <a href="#" class="link-btn" target="_blank">
+                                <i class="fas fa-globe"></i> Live Demo
+                            </a>
+                            <a href="#" class="link-btn" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1487017159836-4e23f5b6feb7?w=500&h=300&fit=crop" alt="Mobile App UI">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Mobile App Interface</h3>
+                        <p class="tech-stack">React Native • JavaScript • UI Design</p>
+                        <p class="description">Beautiful mobile app UI with intuitive navigation, smooth animations, and modern design patterns.</p>
+                        <div class="portfolio-links">
+                            <a href="#" class="link-btn" target="_blank">
+                                <i class="fas fa-globe"></i> Live Demo
+                            </a>
+                            <a href="#" class="link-btn" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Frontend Development</h3>
+                    <p>Custom, responsive websites and web applications built with modern technologies and best practices. From simple websites to complex SPAs.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> Responsive Design</li>
+                        <li><i class="fas fa-check"></i> Performance Optimization</li>
+                        <li><i class="fas fa-check"></i> Cross-browser Testing</li>
+                        <li><i class="fas fa-check"></i> SEO-Friendly Code</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3>Shopify Customization</h3>
+                    <p>Professional Shopify theme customization and development. Create stunning online stores that convert visitors into paying customers.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> Theme Customization</li>
+                        <li><i class="fas fa-check"></i> Liquid Coding</li>
+                        <li><i class="fas fa-check"></i> App Integration</li>
+                        <li><i class="fas fa-check"></i> Conversion Optimization</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Beautiful and functional user interfaces that users love. Combining aesthetics with usability for exceptional digital experiences.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> UI Design</li>
+                        <li><i class="fas fa-check"></i> UX Research</li>
+                        <li><i class="fas fa-check"></i> Wireframing</li>
+                        <li><i class="fas fa-check"></i> Design Systems</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:rraodilawarzaman@gmail.com">rraodilawarzaman@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Lodhran, Pakistan</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <p><a href="https://linkedin.com" target="_blank">linkedin.com/in/dilawarzaman</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <h4>GitHub</h4>
+                            <p><a href="https://github.com" target="_blank">github.com/dilawarzaman</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>M Dilawar Zaman</h4>
+                    <p>Frontend Web Developer & Shopify Expert</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Me</h4>
+                    <div class="social-links">
+                        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 M Dilawar Zaman. All rights reserved. | Crafted with <span class="heart">❤</span> by Dilawar</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
